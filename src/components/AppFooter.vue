@@ -5,10 +5,11 @@ export default {
 </script>
 
 <template>
-<h2>footer</h2>
-
+    <img src="../assets/img/footer-bg.jpg" alt="">
 </template>
 
 <style scoped lang="scss">
-
+    img {
+        width: 100%;
+    }
 </style>
