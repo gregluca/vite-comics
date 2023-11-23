@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-<h2>body list</h2>
+<h2>footer</h2>
 
 </template>
 
