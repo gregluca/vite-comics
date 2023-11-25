@@ -104,9 +104,10 @@ h2 {
 .row {
   display: flex;
   flex-wrap: wrap;
-
+  gap: 6rem;
   
   .col {
+    width: calc((100% / 6) - 6rem) ;
   }
 }
 </style>

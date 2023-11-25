@@ -3,6 +3,7 @@ import AppHeader from './components/AppHeader.vue';
 import AppBodyList from './components/AppBodyList.vue';
 import AppFooter from './components/AppFooter.vue';
 import AppBonus from './components/AppBonus.vue';
+import AppHero from './components/AppHero.vue';
 
 
 export default {
@@ -10,16 +11,19 @@ export default {
     AppHeader,
     AppBodyList,
     AppFooter,
-    AppBonus
+    AppBonus,
+    AppHero
   }
 }
 </script>
 
 <template>
   <AppHeader />
+  <AppHero />
   <AppBodyList />
   <AppBonus />
   <AppFooter /> 
+
   
 </template>
 
