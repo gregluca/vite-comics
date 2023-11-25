@@ -91,6 +91,12 @@ export default {
         <AppCard :series="card.series" :thumb="card.thumb" :type="card.type"/>
       </div>
     </div>
+    <div class="btn">
+      <button> LOAD MORE </button>
+    </div>
+    <div class="btn-2">
+      <button> CURRENT SERIES </button>
+    </div>
 </div>
 </template>
 
@@ -105,9 +111,30 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 6rem;
+  margin-top: 40px;
   
   .col {
     width: calc((100% / 6) - 6rem) ;
   }
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.container {
+  position: relative;
+}
+.btn-2 {
+  position: absolute;
+  top: -60px;
+
+}
+button {
+  width: 150px;
+  padding: 10px;
+  color: $white;
+  background-color: $banner-bg-color;
+  border: none;
 }
 </style>
