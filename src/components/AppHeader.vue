@@ -81,10 +81,12 @@ export default {
             list-style-type: none;
             gap: 1rem;
         }
-
         a{
             text-decoration: none;
             color: $header-color;
+        }
+        a:hover {
+            color: $banner-bg-color;
         }
     }
 

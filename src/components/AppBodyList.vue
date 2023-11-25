@@ -92,10 +92,10 @@ export default {
       </div>
     </div>
     <div class="btn">
-      <button> LOAD MORE </button>
+      <button><a href="">LOAD MORE</a></button>
     </div>
     <div class="btn-2">
-      <button> CURRENT SERIES </button>
+      <button><a href="">CURRENT SERIES</a></button>
     </div>
 </div>
 </template>
@@ -136,5 +136,8 @@ button {
   color: $white;
   background-color: $banner-bg-color;
   border: none;
+}
+button:hover {
+  opacity: 0.8;
 }
 </style>
