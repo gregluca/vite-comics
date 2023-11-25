@@ -20,7 +20,7 @@ export default {
   <AppBodyList />
   <AppBonus />
   <AppFooter /> 
-
+  
 </template>
 
 <style lang="scss">

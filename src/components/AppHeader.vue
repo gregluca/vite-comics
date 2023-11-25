@@ -40,35 +40,35 @@ export default {
 </script>
 
 <template>
-<div class="container">
-    <div class="small-container">
-        <header>
+    <header>
+        <div class="container">
             <div class="logo">
-                <img src="../assets/img/dc-logo.png" alt="">
+            <img src="../assets/img/dc-logo.png" alt="Logo DC Comics" />
             </div>
             <nav>
-                <li v-for="item in navItems" :key="item.title"><a href="">{{ item.title }}</a></li>
+              <ul>
+                  <li v-for="item in navItems" :key="item.title">
+                  <a href="">{{ item.title }}</a>
+                  </li>
+              </ul>
             </nav>
-        </header>
-    </div>
-</div>
-
-</template>
+        </div>
+      </header>
+    </template>
 
 <style scoped lang="scss">
-.container {
-    margin-top: 60px;
-    background-color: white;
-}
-.small-container {
-    width: 80%;
-    margin: 0 auto;
-}
-    header {
-        padding: 20px;
-        display: flex;
-        justify-content: space-between;
+@use "../style/partials/mixin" as *;
+@use "../style/partials/variables" as *;
 
+    header {
+        padding: 1rem;
+        background-color: $white;
+        z-index: 999;
+
+
+        .container {
+            @include flex();
+        }
         .logo{
             text-align: center;
 
@@ -76,22 +76,15 @@ export default {
                 max-width: 80px;
             }
         }
-        nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        ul {
+            @include flex();
+            list-style-type: none;
             gap: 1rem;
         }
-        li {
-            list-style-type: none;
-        }
-        a {
-            text-decoration: none;
-            color: black;
 
-            &:hover {
-                color: #0082f9;
-            }
+        a{
+            text-decoration: none;
+            color: $header-color;
         }
     }
 
